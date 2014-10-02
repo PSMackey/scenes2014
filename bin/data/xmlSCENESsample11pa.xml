@@ -1,0 +1,91 @@
+<SCENE name=Home>                        
+  <NODE name=theDesk>
+      <TEXT>
+          <FILE>deskkkkkkkk</FILE>
+          <ALIGN>  C  </ALIGN>
+          <X>  202  </X>
+          <Y>  200  </Y>
+          <R>  255  </R>
+          <G>  153  </G>
+          <B> 0 </B>
+          <R2>  255  </R2>
+          <G2>  153  </G2>
+          <B2> 0 </B2>
+          <VISIBLE>T</VISIBLE>
+      </TEXT>
+      <LINK mode=REVEAL>  topDrawer </LINK>
+  </NODE>
+  <NODE name=topDrawer>
+      <TEXTCONTAINER>
+          <DISPNAME>Drawer</DISPNAME>
+          <ALIGN>  C  </ALIGN>
+          <X>  222  </X>
+          <Y>  225  </Y>
+          <R>  255  </R>
+          <G>  153  </G>
+          <B> 0 </B>
+          <R2>  255  </R2>
+          <G2>  153  </G2>
+          <B2> 0 </B2>
+          <VISIBLE>F</VISIBLE>
+          <CONTENTS>pencil|red eraser|ruler|exacto knife</CONTENTS>
+      </TEXTCONTAINER>
+      <LINK mode=OPEN> dontcare </LINK>
+  </NODE>
+  <NODE name=Pet>
+      <TEXT>
+          <FILE>Orangutan</FILE>
+          <VISIBLE>T</VISIBLE>
+          <ALIGN>  C  </ALIGN>
+          <X>  600  </X>
+          <Y>  200  </Y>
+          <R>  255  </R>
+          <G>  153  </G>
+          <B> 255 </B>
+          <R2>  255  </R2>
+          <G2>  153  </G2>
+          <B2> 0 </B2>
+      </TEXT>
+      <LINK mode=TAKE>  supposedlyatakelink </LINK>
+  </NODE>
+  <NODE name=firstDoorway>                      
+    <TEXT>
+      <FILE>  door  </FILE>
+      <VISIBLE>T</VISIBLE>
+      <X>  900  </X>              
+      <Y>  412  </Y>
+      <R>  255  </R>
+      <G>  153  </G>
+      <R2>  255  </R2>
+      <G2>  153  </G2>
+      <B2> 0 </B2>
+      <B> 0 </B>
+    </TEXT>
+    <LINK mode=BRANCH>  Hallway </LINK>
+  </NODE>
+</SCENE>
+
+<SCENE name=Hallway>
+  <NODE>                      
+      <TEXT>
+          <FILE>  It's All Gone!  </FILE>
+          <VISIBLE>T</VISIBLE>
+          <X>  500  </X>
+          <Y>  500  </Y>
+          <R>  255  </R>
+          <G>  0  </G>
+          <B> 0 </B>
+          <R2>  255  </R2>
+          <G2>  153  </G2>
+          <B2> 0 </B2>
+      </TEXT>
+  </NODE>                      
+</SCENE>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        

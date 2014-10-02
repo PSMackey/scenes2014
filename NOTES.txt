@@ -1,0 +1,21 @@
+
+comments to V
+
+what makes the rect outline when viewing fullscreen? it's in aText! and Hotspot & txtcntnr [window and dialogue] dont do that, if "global" do in Core or Scene
+
+note how i've set win params in textcontainer & text as Externs, defined in Scene
+
+screens need a "title"?
+
+text & tcont  could have default colors so XML only  uses RGB if overriding
+
+R,G,B implementation good but commas may complicate CSV conversion
+
+registerHotspot (text, textcontainer): slightly changed check for NULL
+
+BBUG That's a click on aHotspot wooden desk in Node #104 of Scene#1 Apt4
+A Hotspot tries REVEAL
+That's a click on aHotspot  in Node #105 of Scene#1 Apt4
+Hotspot sending opencontainerevent with this info: opening apt4drawer0
+NO CONTENTS APPEAR
+this IS working in scenes REV 092914 copy-color

@@ -1,0 +1,14 @@
+<NODE name=topDrawer>
+      <TEXTCONTAINER>
+          <DISPNAME>Drawer</DISPNAME>
+          <ALIGN>  C  </ALIGN>
+          <X>  270  </X>
+          <Y>  200  </Y>
+          <R>  255  </R>
+          <G>  153  </G>
+          <B> 0 </B>
+          <VISIBLE>F</VISIBLE>
+          <CONTENTS>pencil-red eraser-ruler-exacto knife</CONTENTS>
+      </TEXTCONTAINER>
+      <LINK mode=OPEN> contents </LINK>
+</NODE>

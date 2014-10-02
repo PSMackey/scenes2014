@@ -1,0 +1,1477 @@
+<SCENE name=Apt9>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE name=doorinside9>
+        <TEXT>
+            <FILE>  door  </FILE>
+            <X>  990  </X><Y>  302  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway9 </LINK>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Apt4>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>bedframe</FILE><ALIGN>  C  </ALIGN>
+            <X> 688 </X> <Y>  606  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+        
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>towel</FILE><ALIGN>  C  </ALIGN>
+            <X>  630  </X><Y>  594  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>pool of black latex paint</FILE><ALIGN>  C  </ALIGN>
+            <X>  473  </X><Y>  517  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>wooden desk</FILE><ALIGN>  C  </ALIGN>
+            <X>  801  </X><Y>  289  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+        <LINK mode=REVEAL>apt4drawer0</LINK>
+    </NODE>
+    <NODE name=apt4drawer0>
+        <TEXTCONTAINER>
+            <DISPNAME>drawer</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  801  </X><Y>  309  </Y>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+            <VISIBLE>F</VISIBLE>
+            <CONTENTS>rolling tobacco|rolling papers|weed|X-Acto knife|Micron pen 005</CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> opening apt4drawer0 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>ballpoint pen</FILE><ALIGN>  C  </ALIGN>
+            <X>  854  </X><Y>  276  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>cereal box</FILE><ALIGN>  C  </ALIGN>
+            <X>  352  </X><Y>  562  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>sketchbook</FILE><ALIGN>  C  </ALIGN>
+            <X>  672  </X><Y>  315  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>4B pencil</FILE><ALIGN>  C  </ALIGN>
+            <X>  705  </X><Y>  333  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>speaker</FILE><ALIGN>  C  </ALIGN>
+            <X>  796  </X><Y>  255  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>speaker</FILE><ALIGN>  C  </ALIGN>
+            <X>  898  </X><Y>  254  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>chair</FILE><ALIGN>  C  </ALIGN>
+            <X>  656  </X><Y>  348  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>dresser</FILE><ALIGN>  C  </ALIGN>
+            <X>  398  </X><Y>  583  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+        <LINK mode=REVEAL>apt4drawer1</LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>dresser</FILE><ALIGN>  C  </ALIGN>
+            <X>  398  </X><Y>  583  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+        <LINK mode=REVEAL>apt4drawer2</LINK>
+    </NODE>
+    <NODE name=apt4drawer1>
+        <TEXTCONTAINER>
+            <DISPNAME>shelf</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  398  </X><Y>  603  </Y>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+            <VISIBLE>F</VISIBLE>
+            <CONTENTS>condom|condom|condom</CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> dontcare </LINK>
+    </NODE>
+    <NODE name=apt4drawer2>
+        <TEXTCONTAINER>
+            <DISPNAME>shelf</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  398  </X><Y>  623  </Y>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+            <VISIBLE>F</VISIBLE>
+            <CONTENTS>T-shirt</CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> dontcare </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>briefs</FILE><ALIGN> C  </ALIGN>
+            <X>  608  </X><Y>  334  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>bookshelf</FILE><ALIGN>  C  </ALIGN>
+            <X>  896  </X><Y>  123  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+        <LINK mode=REVEAL>apt4shelf1</LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>bookshelf</FILE><ALIGN>  C  </ALIGN>
+            <X>  896  </X><Y>  123  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+        <LINK mode=REVEAL>apt4shelf2</LINK>
+    </NODE>
+    <NODE name=apt4shelf1>
+        <TEXTCONTAINER>
+            <DISPNAME>shelf</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  896  </X><Y>  143  </Y>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+            <VISIBLE>F</VISIBLE>
+            <CONTENTS>art magazine|art magazine|art magazine|"The Unbearable Lightness of Being"|"Norwegian Wood"</CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> dontcare </LINK>
+    </NODE>
+    <NODE name=apt4shelf2>
+        <TEXTCONTAINER>
+            <DISPNAME>shelf</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  896  </X><Y>  163  </Y>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+            <VISIBLE>F</VISIBLE>
+            <CONTENTS>eraser|digital camera|mug|oatmeal</CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> dontcare </LINK>
+    </NODE>
+    <NODE name=mattress1>
+        <TEXT>
+            <FILE>mattress</FILE><ALIGN>  C  </ALIGN>
+            <X>  362  </X><Y>  368  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+    </NODE>
+    <NODE name=mattress2>
+        <TEXT>
+            <FILE>mattress</FILE><ALIGN>  C  </ALIGN>
+            <X>  364  </X><Y>  253  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+    </NODE>
+    <NODE name=doorinside4>
+        <TEXT>
+            <FILE>  door  </FILE>
+            <X>  76  </X><Y>  612  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway4 </LINK>
+    </NODE>
+    
+    <NODE>
+        <TEXT>
+            <FILE>lamp</FILE>
+            <ALIGN>  C  </ALIGN>
+            <X>  872  </X><Y>  237  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>light</FILE><ALIGN>  C  </ALIGN>
+            <X>  580  </X><Y>  37  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>light switch</FILE><ALIGN>  C  </ALIGN>
+            <X>  172  </X><Y>  630  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+        <LINK mode=LIGHT> 27,27,27 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>French girl</FILE><ALIGN>  C  </ALIGN>
+            <X>  718  </X><Y>  574  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+        </TEXT>
+    </NODE>
+    <NODE name=bowl>
+        <TEXTCONTAINER>
+            <DISPNAME>bowl</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  420  </X><Y>  347  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
+            <VISIBLE>T</VISIBLE>
+            <CONTENTS>fried cheese|fork</CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> dontcare </LINK>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Apt11>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE name=bed>
+        <TEXTCONTAINER>
+            <DISPNAME>bed</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  729  </X><Y>  581  </Y>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <VISIBLE>T</VISIBLE>
+            <CONTENTS>pillow|mattress|blanket</CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> dontcare </LINK>
+    </NODE>
+    <NODE name=plasticbag>
+        <TEXTCONTAINER>
+            <DISPNAME>plastic bag</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  757  </X><Y>  553  </Y>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <VISIBLE>T</VISIBLE>
+            <CONTENTS>chocolate pudding|rice pudding|mango-flavored licorice</CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> dontcare </LINK>
+    </NODE>
+    <NODE name=bowl>
+        <TEXTCONTAINER>
+            <DISPNAME>bowl</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  367  </X><Y>  510  </Y>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <VISIBLE>T</VISIBLE>
+            <CONTENTS>white cheddar macaroni and cheese|fork</CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> dontcare </LINK>
+    </NODE>
+    <NODE name=doorinside11>
+        <TEXT>
+            <FILE>door</FILE><ALIGN>  C  </ALIGN>
+            <X>  214  </X><Y>  130  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+        <LINK mode=BRANCH>Hallway11</LINK>
+    </NODE>
+    <NODE name= WoodenDeskInApt11>
+        <TEXT>
+            <FILE>wooden desk</FILE><ALIGN>  C  </ALIGN>
+            <X>  58  </X><Y>  425  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>wooden chair</FILE><ALIGN>  C  </ALIGN>
+            <X>  208  </X><Y>  448  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>3-head floor lamp</FILE><ALIGN>  C  </ALIGN>
+            <X>  1007  </X><Y>  338  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+        <LINK mode=REVEAL>  apt11bigdipper </LINK>
+    </NODE>
+    <NODE name=apt11bigdipper>
+        <TEXT>
+            <FILE>the Big Dipper</FILE><ALIGN>  C  </ALIGN>
+            <X>  806  </X><Y>  47  </Y><VISIBLE>F</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <!--<NODE name=apt11bigdipper>
+        <TEXTCONTAINER>
+            <DISPNAME>the Big Dipper</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  806  </X><Y>  47  </Y>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <VISIBLE>F</VISIBLE>
+            <CONTENTS></CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> dontcare </LINK>
+    </NODE>-->
+    <NODE>
+        <TEXT>
+            <FILE>light switch</FILE><ALIGN>  C  </ALIGN>
+            <X>  298  </X><Y>  110  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>table</FILE><ALIGN>  C  </ALIGN>
+            <X>  540  </X><Y>  362  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE name=FirstDresserInApt11>
+        <TEXT>
+            <FILE>dresser</FILE><ALIGN>  C  </ALIGN>
+            <X>  352  </X><Y>  550  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+        <LINK mode=REVEAL>  apt11drawer1 </LINK>
+    </NODE>
+    <NODE name=SecondDresserInApt11>
+        <TEXT>
+            <FILE>dresser</FILE><ALIGN>  C  </ALIGN>
+            <X>  352  </X><Y>  550  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+        <LINK mode=REVEAL>  apt11drawer2 </LINK>
+    </NODE>
+    <NODE name=apt11drawer1>
+        <TEXTCONTAINER>
+            <DISPNAME>drawer</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  352  </X><Y>  570  </Y>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <VISIBLE>F</VISIBLE>
+            <CONTENTS>body lotion</CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> opening apt11drawer1 </LINK>
+    </NODE>
+    <NODE name=apt11drawer2>
+        <TEXTCONTAINER>
+            <DISPNAME>drawer</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  352  </X><Y>  590  </Y>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <VISIBLE>F</VISIBLE>
+            <CONTENTS>-</CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> opening apt11drawer2 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>computer monitor</FILE><ALIGN>  C  </ALIGN>
+            <X>  28  </X><Y>  386  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>PC tower</FILE><ALIGN>  C  </ALIGN>
+            <X>  48  </X><Y>  340  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>trash can</FILE><ALIGN>  C  </ALIGN>
+            <X>  960  </X><Y>  410  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>honey-coated cashews</FILE><ALIGN>  C  </ALIGN>
+            <X>  227  </X><Y>  530  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>empty plastic container</FILE><ALIGN>  C  </ALIGN>
+            <X>  176  </X><Y>  509  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Apt12>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE name=bed>
+        <TEXTCONTAINER>
+            <DISPNAME>bed</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  570  </X><Y>  525  </Y>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <VISIBLE>T</VISIBLE>
+            <CONTENTS>pillow|pillow|quilted blanket|quilted blanket|straw mat</CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> opening bed </LINK>
+    </NODE>
+    <NODE name=basin>
+        <TEXTCONTAINER>
+            <DISPNAME>basin</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  841  </X><Y>  107  </Y>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <VISIBLE>T</VISIBLE>
+            <CONTENTS>toothpaste|plastic cup</CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> opening basin </LINK>
+    </NODE>
+    <NODE name=table>
+        <TEXTCONTAINER>
+            <DISPNAME>table</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  81  </X><Y>  487  </Y>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <VISIBLE>T</VISIBLE>
+            <CONTENTS>15% alc/vol sake|lychee-flavored sake|glass|30% alc/vol apricot brandy|glass|water pitcher</CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> opening table </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>folding table</FILE><ALIGN>  C  </ALIGN>
+            <X>  17  </X><Y>  289  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>hazelnuts</FILE><ALIGN>  C  </ALIGN>
+            <X>  391  </X><Y>  249  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>desk</FILE><ALIGN>  C  </ALIGN>
+            <X>  505  </X><Y>  273  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>multicolor foam mat</FILE><ALIGN>  C  </ALIGN>
+            <X>  283  </X><Y>  384  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE name=computerMonitor1>
+        <TEXT>
+            <FILE>computer monitor</FILE><ALIGN>  C  </ALIGN>
+            <X>  618  </X><Y>  228  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE name=computerMonitor2>
+        <TEXT>
+            <FILE>computer monitor</FILE><ALIGN>  C  </ALIGN>
+            <X>  457  </X><Y>  228  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE name=pctower1>
+        <TEXT>
+            <FILE>PC tower</FILE><ALIGN>  C  </ALIGN>
+            <X>  606  </X><Y>  342  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE name=pctower2>
+        <TEXT>
+            <FILE>PC tower</FILE><ALIGN>  C  </ALIGN>
+            <X>  707  </X><Y>  342  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>swivel chair</FILE><ALIGN>  C  </ALIGN>
+            <X>  472  </X><Y>  350  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE name=doorinside12>
+        <TEXT>
+            <FILE>door</FILE><ALIGN>  C  </ALIGN>
+            <X>  1138  </X><Y>  230  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+        <LINK mode=BRANCH>Hallway12</LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>light</FILE><ALIGN>  C  </ALIGN>
+            <X>  580  </X><Y>  40  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>light switch</FILE><ALIGN>  C  </ALIGN>
+            <X>  1011  </X><Y>  171  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>flatscreen TV</FILE><ALIGN>  C  </ALIGN>
+            <X>  1067  </X><Y>  428  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>8% alc/vol beer margarita</FILE><ALIGN>  C  </ALIGN>
+            <X>  616  </X><Y>  488  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>wooden board</FILE><ALIGN>  C  </ALIGN>
+            <X>  785  </X><Y>  618  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>clamp light</FILE><ALIGN>  C  </ALIGN>
+            <X>  815  </X><Y>  600  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>bra</FILE><ALIGN>  C  </ALIGN>
+            <X>  424  </X><Y>  573  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>bookcase</FILE><ALIGN>  C  </ALIGN>
+            <X>  832  </X><Y>  167  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+        <LINK mode=REVEAL>  apt12shelf1 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>bookcase</FILE><ALIGN>  C  </ALIGN>
+            <X>  832  </X><Y>  167  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+        <LINK mode=REVEAL>  apt12shelf2 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>bookcase</FILE><ALIGN>  C  </ALIGN>
+            <X>  832  </X><Y>  167  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+        <LINK mode=REVEAL>  apt12shelf3 </LINK>
+    </NODE>
+    <NODE name=apt12shelf1>
+        <TEXTCONTAINER>
+            <DISPNAME>shelf</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  832  </X><Y>  187  </Y>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <VISIBLE>F</VISIBLE>
+            <CONTENTS>huh</CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> opening apt12shelf1 </LINK>
+    </NODE>
+    <NODE name=apt12shelf2>
+        <TEXTCONTAINER>
+            <DISPNAME>shelf</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  832  </X><Y>  207  </Y>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <VISIBLE>F</VISIBLE>
+            <CONTENTS>amethyst cluster|blue paper robot|purple paper robot</CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> opening apt12shelf2 </LINK>
+    </NODE>
+    <NODE name=apt12shelf3>
+        <TEXTCONTAINER>
+            <DISPNAME>shelf</DISPNAME><ALIGN>  C  </ALIGN>
+            <X>  832  </X><Y>  227  </Y>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+            <VISIBLE>F</VISIBLE>
+            <CONTENTS>dried dates|protein powder|blender bottle</CONTENTS>
+        </TEXTCONTAINER>
+        <LINK mode=OPEN> opening apt12shelf3 </LINK>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Hallway1>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>1</FILE><ALIGN></ALIGN>
+            <X>30</X><Y>322</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  elevator  </FILE><ALIGN>  C  </ALIGN>
+            <X>  972  </X><Y>  339  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Elevator </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>upstairs</FILE><ALIGN></ALIGN>
+            <X>572</X><Y>150</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway2 </LINK>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Hallway2>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>2</FILE><ALIGN></ALIGN>
+            <X>30</X><Y>322</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>door</FILE><ALIGN></ALIGN>
+            <X>101</X><Y>584</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Apt2 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>downstairs</FILE><ALIGN></ALIGN>
+            <X>564</X><Y>264</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway1 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>upstairs</FILE><ALIGN></ALIGN>
+            <X>572</X><Y>150</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway3 </LINK>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Hallway3>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>3</FILE><ALIGN></ALIGN>
+            <X>30</X><Y>322</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  elevator  </FILE><ALIGN>  C  </ALIGN>
+            <X>  972  </X><Y>  339  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Elevator </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>door</FILE><ALIGN></ALIGN>
+            <X>101</X><Y>584</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Apt3 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>downstairs</FILE><ALIGN></ALIGN>
+            <X>564</X><Y>264</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway2 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>upstairs</FILE><ALIGN></ALIGN>
+            <X>572</X><Y>150</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway4 </LINK>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Hallway4>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>4</FILE><ALIGN></ALIGN>
+            <X>30</X><Y>322</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>door</FILE><ALIGN></ALIGN>
+            <X>101</X><Y>584</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Apt4 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>downstairs</FILE><ALIGN></ALIGN>
+            <X>564</X><Y>264</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway3 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>upstairs</FILE><ALIGN></ALIGN>
+            <X>572</X><Y>150</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway5 </LINK>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Hallway5>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>5</FILE><ALIGN></ALIGN>
+            <X>30</X><Y>322</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  elevator  </FILE><ALIGN>  C  </ALIGN>
+            <X>  972  </X><Y>  339  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Elevator </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>door</FILE><ALIGN></ALIGN>
+            <X>101</X><Y>584</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Apt5 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>downstairs</FILE><ALIGN></ALIGN>
+            <X>564</X><Y>264</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway4 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>upstairs</FILE><ALIGN></ALIGN>
+            <X>572</X><Y>150</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway6 </LINK>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Hallway6>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>6</FILE><ALIGN></ALIGN>
+            <X>30</X><Y>322</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>door</FILE><ALIGN></ALIGN>
+            <X>101</X><Y>584</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Apt6 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>downstairs</FILE><ALIGN></ALIGN>
+            <X>564</X><Y>264</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway5 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>upstairs</FILE><ALIGN></ALIGN>
+            <X>572</X><Y>150</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway7 </LINK>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Hallway7>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>7</FILE><ALIGN></ALIGN>
+            <X>30</X><Y>322</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  elevator  </FILE><ALIGN>  C  </ALIGN>
+            <X>  972  </X><Y>  339  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Elevator </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>door</FILE><ALIGN></ALIGN>
+            <X>101</X><Y>584</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Apt7 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>downstairs</FILE><ALIGN></ALIGN>
+            <X>564</X><Y>264</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway6 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>upstairs</FILE><ALIGN></ALIGN>
+            <X>572</X><Y>150</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway8 </LINK>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Hallway8>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>8</FILE><ALIGN></ALIGN>
+            <X>30</X><Y>322</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>door</FILE><ALIGN></ALIGN>
+            <X>101</X><Y>584</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Apt8 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>downstairs</FILE><ALIGN></ALIGN>
+            <X>564</X><Y>264</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway7 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>upstairs</FILE><ALIGN></ALIGN>
+            <X>572</X><Y>150</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway9 </LINK>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Hallway9>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>9</FILE><ALIGN></ALIGN>
+            <X>30</X><Y>322</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  elevator  </FILE><ALIGN>  C  </ALIGN>
+            <X>  972  </X><Y>  339  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Elevator </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>door</FILE><ALIGN></ALIGN>
+            <X>101</X><Y>584</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Apt9 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>downstairs</FILE><ALIGN></ALIGN>
+            <X>564</X><Y>264</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway8 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>upstairs</FILE><ALIGN></ALIGN>
+            <X>572</X><Y>150</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway10 </LINK>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Hallway10>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>10</FILE><ALIGN></ALIGN>
+            <X>30</X><Y>322</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>door</FILE><ALIGN></ALIGN>
+            <X>101</X><Y>584</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Apt10 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>downstairs</FILE><ALIGN></ALIGN>
+            <X>564</X><Y>264</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway9 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>upstairs</FILE><ALIGN></ALIGN>
+            <X>572</X><Y>150</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway11 </LINK>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Hallway11>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>11</FILE><ALIGN></ALIGN>
+            <X>30</X><Y>322</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  elevator  </FILE><ALIGN>  C  </ALIGN>
+            <X>  972  </X><Y>  339  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Elevator </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>door</FILE><ALIGN></ALIGN>
+            <X>101</X><Y>584</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Apt11 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>downstairs</FILE><ALIGN></ALIGN>
+            <X>564</X><Y>264</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway10 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>upstairs</FILE><ALIGN></ALIGN>
+            <X>572</X><Y>150</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway12 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>tree</FILE><ALIGN></ALIGN>
+            <X>204</X><Y>545</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Hallway12>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>12</FILE><ALIGN></ALIGN>
+            <X>30</X><Y>322</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>door</FILE><ALIGN></ALIGN>
+            <X>101</X><Y>584</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Apt12 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>downstairs</FILE><ALIGN></ALIGN>
+            <X>564</X><Y>264</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway11 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>upstairs</FILE><ALIGN></ALIGN>
+            <X>572</X><Y>150</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway13 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>dead cockroach</FILE><ALIGN></ALIGN>
+            <X>421</X><Y>216</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Hallway13>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>13</FILE><ALIGN></ALIGN>
+            <X>30</X><Y>322</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  elevator  </FILE><ALIGN>  C  </ALIGN>
+            <X>  972  </X><Y>  339  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Elevator </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>door</FILE><ALIGN></ALIGN>
+            <X>101</X><Y>584</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Apt13 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>downstairs</FILE><ALIGN></ALIGN>
+            <X>564</X><Y>264</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway12 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>upstairs</FILE><ALIGN></ALIGN>
+            <X>572</X><Y>150</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway14 </LINK>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Hallway14>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>14</FILE><ALIGN></ALIGN>
+            <X>30</X><Y>322</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>door</FILE><ALIGN></ALIGN>
+            <X>101</X><Y>584</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Apt14 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>downstairs</FILE><ALIGN></ALIGN>
+            <X>564</X><Y>264</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway13 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>upstairs</FILE><ALIGN></ALIGN>
+            <X>572</X><Y>150</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway15 </LINK>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Hallway15>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>15</FILE><ALIGN></ALIGN>
+            <X>30</X><Y>322</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  elevator  </FILE><ALIGN>  C  </ALIGN>
+            <X>  972  </X><Y>  339  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Elevator </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>door</FILE><ALIGN></ALIGN>
+            <X>101</X><Y>584</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Apt15 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>downstairs</FILE><ALIGN></ALIGN>
+            <X>564</X><Y>264</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway14 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>upstairs</FILE><ALIGN></ALIGN>
+            <X>572</X><Y>150</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway16 </LINK>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Hallway16>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>16</FILE><ALIGN></ALIGN>
+            <X>30</X><Y>322</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>door</FILE><ALIGN></ALIGN>
+            <X>101</X><Y>584</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Apt16 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>downstairs</FILE><ALIGN></ALIGN>
+            <X>564</X><Y>264</Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway15 </LINK>
+    </NODE>
+</SCENE>
+
+
+
+
+<SCENE name=Elevator>
+    <NODE>
+        <BG>  <CLR>255</CLR>  </BG>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  1  </FILE><ALIGN>  C  </ALIGN>
+            <X>  855  </X><Y>  345  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway1 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  3  </FILE><ALIGN>  C  </ALIGN>
+            <X>  854  </X><Y>  315  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway3 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  5  </FILE><ALIGN>  C  </ALIGN>
+            <X>  854  </X><Y>  285  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway5 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  7  </FILE><ALIGN>  C  </ALIGN>
+            <X>  854  </X><Y>  255  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway7 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  9  </FILE><ALIGN>  C  </ALIGN>
+            <X>  854  </X><Y>  225  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway9 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  11  </FILE><ALIGN>  C  </ALIGN>
+            <X>  892  </X><Y>  315  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway11 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  13  </FILE><ALIGN>  C  </ALIGN>
+            <X>  892  </X><Y>  285  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway13 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  15  </FILE><ALIGN>  C  </ALIGN>
+            <X>  892  </X><Y>  255  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway15 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  16  </FILE><ALIGN>  C  </ALIGN>
+            <X>  892  </X><Y>  225  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway16 </LINK>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>  door  </FILE><ALIGN>  C  </ALIGN>
+            <X>  578  </X><Y>  326  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+        <LINK mode=BRANCH>  Hallway4 </LINK>
+    </NODE>
+    <NODE name=mirror1>
+        <TEXT>
+            <FILE>  mirror  </FILE><ALIGN>  C  </ALIGN>
+            <X>  1066  </X><Y>  321  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE name=mirror2>
+        <TEXT>
+            <FILE>  mirror  </FILE><ALIGN>  C  </ALIGN>
+            <X>  90  </X><Y>  328  </Y><VISIBLE>T</VISIBLE>
+            <R>164</R><G>164</G><B>164</B>
+        </TEXT>
+    </NODE>
+    <NODE>
+        <TEXT>
+            <FILE>light</FILE><ALIGN>  C  </ALIGN>
+            <X>  581  </X><Y>  43  </Y><VISIBLE>T</VISIBLE>
+            <R>  164  </R><G>  164  </G><B> 164 </B>
+        </TEXT>
+    </NODE>
+</SCENE>
+
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+<SCENE name=Home>                        
+  <NODE>
+      <TEXT>
+          <FILE>deskkkkkkkk</FILE>
+          <ALIGN>  C  </ALIGN>
+          <X>  202  </X>
+          <Y>  200  </Y>
+          <R>  255  </R>
+          <G>  153  </G>
+          <B> 0 </B>
+      </TEXT>
+  </NODE>
+  
+  <NODE name=firstDoorway>                      
+    <TEXT>
+      <FILE>  door  </FILE>              
+      <X>  900  </X>              
+      <Y>  412  </Y>
+      <R>  255  </R>
+      <G>  153  </G>
+      <B> 0 </B>
+    </TEXT>
+    <LINK mode=BRANCH>  Hallway </LINK>                    
+    <AUDIO mode=PLAYONCLICK>                    
+      <FILE>  repelring.aif  </FILE>              
+    </AUDIO>                    
+  </NODE>
+  
+</SCENE>
+
+
+<SCENE name=Hallway>
+  <NODE>                      
+    <BG>  <FILE> bg-rock.jpg </FILE>    </BG>              
+  </NODE>                      
+  <NODE name=wiggleThing>                      
+    <ANIM>                    
+      <IMGSDIR>  Squiggle  </IMGSDIR>              
+      <PREFIX>  squiggle  </PREFIX>              
+      <EXTEN>  .png  </EXTEN>              
+      <ALIGN>  C  </ALIGN>              
+      <X>  300  </X>              
+      <Y>  300  </Y>              
+    </ANIM>                    
+    <AUDIO>                    
+      <FILE>  cyclical_grinding.aif  </FILE>              
+      <LOOP>  T  </LOOP>              
+    </AUDIO>                    
+  </NODE>                      
+  <NODE name=knocker>                      
+    <PICT>                    
+      <FILE>  knocker.png  </FILE>              
+      <X>  900  </X>              
+      <Y>  600  </Y>              
+    </PICT>                    
+    <LINK mode=BRANCH>  Elevator </LINK>
+    <AUDIO mode=PLAYONCLICK>                    
+      <FILE>  alert_trek.aif  </FILE>              
+    </AUDIO>                    
+  </NODE>                      
+</SCENE>
+
+<SCENE name=Elevator>
+  <NODE>                      
+    <BG>  <FILE> stone2.jpg </FILE>    </BG>              
+  </NODE>                      
+  <NODE>                      
+    <PICT>                    
+      <FILE>  totemhead_99x119.png  </FILE>              
+      <ALIGN>  UL  </ALIGN>              
+      <X>  512  </X>              
+      <Y>  700  </Y>              
+      <DRAG>  T  </DRAG>              
+    </PICT>                    
+  </NODE>                      
+  <NODE name=redFlower>                      
+    <PICT>                    
+      <FILE>  R_hibiscus.png  </FILE>              
+      <X>  900  </X>              
+      <Y>  50  </Y>              
+    </PICT>                    
+    <LINK mode=BRANCH>  Home </LINK>
+    <AUDIO mode=PLAYONCLICK>                    
+      <FILE>  babylaff.aif  </FILE>              
+    </AUDIO>                    
+  </NODE>                      
+</SCENE>                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
