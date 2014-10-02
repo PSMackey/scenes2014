@@ -125,6 +125,7 @@ void aTextCntnr::update() { //via Asset from testApp update() loop
             for (int i=0; i<textItems.size(); i++) {
                 if  (nodeNum==105) {
                     cout<<"look at this"<<endl;
+                    //1002 items not appearing in node 105
                 }
                 textItems[i]->update();
             }
