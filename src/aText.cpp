@@ -14,7 +14,7 @@ extern int winX; //defined in Scene
 extern int winY;
 
 aText::aText(sTextData _data, int _nodenum){
-    nodenum=_nodenum;
+    nodeNum=_nodenum;
     assetFile=_data.FILE;
     //TODO: call this displayedName
     text = assetFile;
@@ -47,7 +47,7 @@ aText::aText(sTextData _data, int _nodenum){
 
 aText::aText(ofVec4f _dims, string _content, ofColor _clrLightOff_base, ofColor _clrLightOff_hover, ofColor _clrLightOn_base, ofColor _clrLightOn_hover,int _itemnum) {
     dimensions=_dims; //may be asked for by Node for Hotspot
-    nodenum=_itemnum;
+    nodeNum=_itemnum;
     text=_content;
     taken=false;
     locXY.set(ofPoint(dimensions[0],dimensions[1]));
@@ -64,7 +64,7 @@ aText::aText(ofVec4f _dims, string _content, ofColor _clrLightOff_base, ofColor 
     
     lightOn=true;
     
-    printf("TextItem made for text %s as item#%i at %0.f %0.f\n",text.c_str(), nodenum, locXY.x, locXY.y);
+    printf("TextItem made for text %s as item#%i at %0.f %0.f\n",text.c_str(), nodeNum, locXY.x, locXY.y);
 }
 
 void aText::registerHotspot(aHotspot* _myhtspt) { //from Node during creation
@@ -112,7 +112,7 @@ void aText::update() { //via Asset from testApp update() loop
             else {clr=clrLightOff_hover;}
         }
     }
-    return mouseIsOver;  //needed if this is a text Item in a textcontainer
+    //1002 return mouseIsOver;  //needed if this is a text Item in a textcontainer
 }
 
 void aText::draw() {  //092614 version for textitems in a container
@@ -120,7 +120,7 @@ void aText::draw() {  //092614 version for textitems in a container
     ofSetColor(clr);
     
     if(visible) {
-        ofDrawBitmapString(text,locXY);
+        ofDrawBitmapString(text,locXY+ofPoint(winX,winY));
     }
 }
 

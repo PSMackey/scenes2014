@@ -1,14 +1,16 @@
-//xmlReadScene version 11    mackey Pratt DDA  April 2014
+//xmlReadScene version 11    mackey Pratt DDA  Spring & Fall 2014
+//also with mods by Victoria Yi
+
 //WIP on a point&click interface engine
-//scenes pm 1002 with parts by v.Yi
 //forking for new/rev features
 
 //TODO: make contents items inventoriable & puttable
 
-///091814
-///new hotspot event types added for text node control
-///use events to tell a Scene to reveal/hide a node, show contents
-///also added new asset type TEXTCONTAINER to hold a labelled collection of texts
+//091814 thru 0929
+//new hotspot event types added for text node control
+//using events to tell a Scene to reveal/hide a node, show contents
+//also added new asset type TEXTCONTAINER to hold a labelled collection of texts
+//"light switch" effect with alternate text colors
 
 //separately: tools for editing/verifying this XML scheme
 // and authoring interfaces for asset placement & poly hotspot drawing
@@ -22,7 +24,7 @@
 //DID fade out rate  OUTRATE INRATE -- uses a sound object to play/fade sound -- mostly working [clickable hotspot ALSO has a basic sound play ability] need to test fadeOUT since scenes currently "cut" w/o delay
 
 //BIG NEEDS:
-//test layering (theory: order of nodes determines who gets the mouse event) TEST
+//test layering (theory: order of nodes determines who gets the mouse event) so far not an issue
 //Reveals (rollovers) type of LINK? see revealsSmall3.xcodeproj
 //Inventory
 //Path History
@@ -31,19 +33,12 @@
     eg an object from one scene now appears in another
 */
 //Clock
+//Quick startup screen with 'progress bar'
+//Transitions
 
 //remembering states of a Scene when things have changed
-//  during gameplay AND(!) saving to another xml for restarting
-
-//You need a debugger for detecting faulty/malformed XML syntax [such as a separate app that reads the XML structure and just reprints what it "saw" with some slight formatting on screen or as a text file]
-//Eventually you'll just be editing the XML directly, which makes having a spreadsheet only a starting-point [when converting from CSV to XML replace , with spaces so indents are visible]
-
-/*NEXT BIG THINGS
-    Quick startup screen with 'progress bar'
-    Transitions
-    Game > Rooms > Scenes > Nodes
-    Organizing classes into project directory subfolders
- */
+//  happens naturally during gameplay
+//  but should be saving to another xml for restarting
 
 
 int hotspotactive; //"global"  updated by any Hotspot with mouseover, used for cursor control

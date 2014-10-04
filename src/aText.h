@@ -33,7 +33,7 @@ public:
     string getName();
     
 private:
-    int nodenum;            //092614
+    int nodeNum;            //092614 //1002
     aHotspot* myHotspot=NULL;
     
     sTextData theTextData;

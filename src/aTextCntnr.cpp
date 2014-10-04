@@ -21,11 +21,6 @@ aTextCntnr::aTextCntnr(sTextContainerData _data, int _scenenum, int _nodenum){
     W = ofBitmapStringGetBoundingBox(displayedName,locXY.x,locXY.y).width;
     H = ofBitmapStringGetBoundingBox(displayedName,locXY.x,locXY.y).height;
     
-//    winW = 1200;
-//    winH = 660;
-//    winX = (ofGetWidth()/2)-(winW/2);
-//    winY = (ofGetHeight()/2)-((winH+100)/2);
-    
     dimensions[0] = _data.X;
     dimensions[1] = _data.Y;
 
@@ -35,7 +30,7 @@ aTextCntnr::aTextCntnr(sTextContainerData _data, int _scenenum, int _nodenum){
     centered = (_data.ALIGN=="C");
     visible = _data.VISIBLE;
     rawcontentstring =_data.CONTENTS; //a "|"-delimited list of what's inside
-    parseContents();
+    // must happen last parseContents();
     
     clrLightOff_base = ofColor(_data.R2,_data.G2,_data.B2);
     clrLightOff_hover = ofColor(_data.R2,_data.G2,_data.B2,190);
@@ -45,6 +40,8 @@ aTextCntnr::aTextCntnr(sTextContainerData _data, int _scenenum, int _nodenum){
     opened=false;
     lightOn=true;
     mouseIsOver=false;
+    
+    parseContents(); //1002 and an earlier version
     
     printf("TextCntnr instance complete for %s at %0.f %0.f\n",displayedName.c_str(), locXY.x, locXY.y);
 }
@@ -123,10 +120,6 @@ void aTextCntnr::update() { //via Asset from testApp update() loop
         if (opened) {
             //also update all your "children"
             for (int i=0; i<textItems.size(); i++) {
-                if  (nodeNum==105) {
-                    cout<<"check integrity of the items"<<endl;
-                    //1002 items not appearing in node 105
-                }
                 textItems[i]->update();
             }
         }

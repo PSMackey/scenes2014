@@ -1,11 +1,15 @@
 
 comments to V
 
-what makes the rect outline when viewing fullscreen? it's in aText! and Hotspot & txtcntnr [window and dialogue] dont do that, if "global" do in Core or Scene
+why do we start outside?
+
+screens need a "title"?
+
+the rect outline when viewing fullscreen? it's in aText! and Hotspot & txtcntnr [window and dialogue] dont do that, if "global" do in Core or Scene
 
 note how i've set win params in textcontainer & text as Externs, defined in Scene
 
-screens need a "title"?
+
 
 text & tcont  could have default colors so XML only  uses RGB if overriding
 
@@ -13,9 +17,11 @@ R,G,B implementation good but commas may complicate CSV conversion
 
 registerHotspot (text, textcontainer): slightly changed check for NULL
 
-BBUG That's a click on aHotspot wooden desk in Node #104 of Scene#1 Apt4
-A Hotspot tries REVEAL
-That's a click on aHotspot  in Node #105 of Scene#1 Apt4
-Hotspot sending opencontainerevent with this info: opening apt4drawer0
-NO CONTENTS APPEAR
-this IS working in scenes REV 092914 copy-color
+
+
+inventory UI? click on an item in the inventory panel, it sticks to cursor, roll to a loc in scene, click to drop
+what happens in the scenegraph? adding a Node using the same Text Asset
+(but also the orig node in orig scene STILL "HAS" same Asset, but not visible)
+ISSUE: if same Asset in new scene, now visible, what property is that?
+hmmm. maybe TAKING removes asset from Node (so you now have an 'empty node' in orig scene)
+OR, just change nodeNum of the Asset and if it doesnt match Node that's trying to draw it, dont draw it <--

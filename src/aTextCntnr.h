@@ -49,14 +49,10 @@ private:
     vector<aHotspot*> itemHotspots; //092614
     vector<aText*> textItems;       //092614
     
-    //string assetType;
-    //int idNum;
     string rawcontentstring;
     //string assetName;
     
     ofColor clr;
     ofColor clrLightOn_base, clrLightOn_hover, clrLightOff_base, clrLightOff_hover;
-    
-    //int winX, winY, winW, winH;
     
 };

@@ -188,11 +188,7 @@ void aHotspot::mouseReleased(Events &e){
         if (visible) {
             mouseIsDown = false;
             printf("That's a click on aHotspot %s in Node #%i of Scene#%i %s\n",myAssetsName.c_str(),myNodeNum,mySceneNum,mySceneName.c_str()); //092214
-            //pm
-            if (myNodeNum==105) {
-                cout<<"look at this"<<endl;
-            }
-            
+  
             static Events eventinfo; //used by ofNotifyEvent's
         
             switch (myLinkType) {
