@@ -11,12 +11,13 @@
 #include "XMLmanager.h"
 #include "DataStructs.h"
 #include "Node.h"
+#include "aText.h" //1003
 #include "Events.h" //091814
 
 class Scene {
 
 public:
-    Scene(XMLmanager* _XMLmgr, ofTrueTypeFont* _font18, int _i);
+    Scene(XMLmanager* _XMLmgr, ofTrueTypeFont* _font12, int _i);
     
     void update(ofPoint _mse);
     void draw();
@@ -27,9 +28,12 @@ public:
     void arrive();
     void depart();
     
+    vector<aText*> lookForTakenItems(); //1003 both
+    vector<aText*> lookForTakenContainerItems();
+    
 private:
     XMLmanager* XMLmgr;
-    ofTrueTypeFont* font18p;
+    ofTrueTypeFont* font12;
     
     vector<Node*> nodes;
     
@@ -51,4 +55,5 @@ private:
     ofRectangle window, dialogue;
     int winW, winH;
     int dlgY, dlgH;
+    
 };

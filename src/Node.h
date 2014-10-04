@@ -45,6 +45,9 @@ public:
     void depart();
     void setVisible();  //091814
     void setLight(); //092514
+
+    aText* getTakenItem(); //1003
+    vector<aText*> getTakenContainerItems(); //1003
     
 private:
     XMLmanager* XMLmgr;
@@ -94,4 +97,5 @@ private:
     bool canDrag;
     
     Custom* custom=NULL;
+    
 };

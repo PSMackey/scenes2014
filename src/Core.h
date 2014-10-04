@@ -4,7 +4,7 @@
 #include "Scene.h"
 #include "XMLmanager.h"
 #include "Events.h" 
-//here because ofNotifyEvent and ofAddListener are being used here
+#include "aText.h" //items thatmay be taken 1003
 
 class Core : public ofBaseApp{
 public:
@@ -24,7 +24,7 @@ public:
     
     
 private:
-    ofTrueTypeFont font10, font18;
+    ofTrueTypeFont font12;
     
     bool firstRun;
     
@@ -43,4 +43,6 @@ private:
     
     void drawCustomCursor(bool _overhotspot);
     
+    void lookForTakenItems(); //1003
+    vector<aText*> allTakenItems; //1003
 };

@@ -28,6 +28,9 @@ public:
     void setLight();
     void registerHotspot(aHotspot* _myhtspt);
     
+    aText* getTakenItem(int _i); //1003 both
+    int getNumItems();
+    
 private:
     aHotspot* myHotspot=NULL; //092914
     int nodeNum, scenenum; //pm1001 cap N

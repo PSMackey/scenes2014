@@ -239,6 +239,30 @@ void Node::setLight() {
     else if (text!=NULL) { text->setLight(); }
 }
 
+//1003
+aText* Node::getTakenItem() {  //called from your Scene
+    aText* tiPtr=NULL;
+    if (text!=NULL) {
+        tiPtr=text->getTakenItem();
+    }
+    return tiPtr;
+}
+
+vector<aText*> Node::getTakenContainerItems() {  //called from your Scene
+    vector<aText*> takenContainerItems;
+    if (textcntnr!=NULL) {
+        int n = textcntnr->getNumItems();
+        for (int i=0; i<n; i++) {
+            aText* tiPtr;
+            tiPtr = textcntnr->getTakenItem(i);
+            if (tiPtr!=NULL) {
+                takenContainerItems.push_back(tiPtr);
+            }
+        }
+    }
+    return takenContainerItems;
+}
+
 //TODO: maybe make an AREA asset (not a node)
 //Node::Node(ofVec4f _data, int _snum, int _hsnum, bool _centered) {
 //    //_data format expected: x y width height

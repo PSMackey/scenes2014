@@ -50,8 +50,7 @@ void Core::setup(){
     ofSetFrameRate(60);
   //091814  CGDisplayHideCursor(NULL); //does this work? yes but is annoying during debug
     
-    font10.loadFont("KeepCalm-Book.otf", 10);
-    font18.loadFont("KeepCalm-Book.otf", 18);
+    font12.loadFont("Foxley 916 Extended", 12);
 
     //error check
     //TODO: monitor error log for failed font and other media loads
@@ -70,7 +69,7 @@ void Core::setup(){
     
     for (int i=0; i<NUMOFSCENES; i++) {
         printf("-------------------------------------------------\n");
-        scenes.push_back(new Scene( &XMLmgr, &font18, i));
+        scenes.push_back(new Scene( &XMLmgr, &font12, i));
         //also store that Scene's name in array (same index as i, the "scene number")
         scenenames.push_back( scenes[i]->getName() );
     }
@@ -119,6 +118,40 @@ void Core::draw(){
     }
 }
 
+//1003
+void Core::lookForTakenItems() {
+    allTakenItems.clear();
+    vector<aText*> takenItemsFromScene;
+    for (int i=0; i<NUMOFSCENES; i++) {
+        takenItemsFromScene = scenes[i]->lookForTakenItems();
+        
+        //insert that vector into allTakenItems
+        //requires use of iterators
+        vector<aText*>::iterator ittse = takenItemsFromScene.end();
+        vector<aText*>::iterator ittsb = takenItemsFromScene.begin();
+
+        allTakenItems.insert(allTakenItems.end(), ittsb, ittse);
+        takenItemsFromScene.clear(); //empty it for next pass
+    }
+    for (int i=0; i<NUMOFSCENES; i++) {
+        takenItemsFromScene = scenes[i]->lookForTakenContainerItems();
+        
+        //insert that vector into allTakenItems
+        //requires use of iterators
+        vector<aText*>::iterator ittse = takenItemsFromScene.end();
+        vector<aText*>::iterator ittsb = takenItemsFromScene.begin();
+        
+        allTakenItems.insert(allTakenItems.end(), ittsb, ittse);
+        takenItemsFromScene.clear(); //empty it for next pass
+    }
+    printf("Here are the Taken items:\n");
+    for (int i=0; i<allTakenItems.size(); i++) {
+        string s="";
+        s=allTakenItems[i]->getName();
+        printf("  %s",s.c_str());
+    }
+    printf("\n\n");
+}
 //--------------------------------------------------------------
 //called from the event listener
 void Core::goToSceneName(Events &e) {

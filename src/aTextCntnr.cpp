@@ -141,5 +141,14 @@ void aTextCntnr::draw(ofPoint _nodeLoc) {
     }
 }
 
+int aTextCntnr::getNumItems() {
+    return textItems.size();
+}
 
-
+aText* aTextCntnr::getTakenItem(int _i) {
+    if (textItems[_i]->taken) {
+        return textItems[_i];
+    } else {
+        return NULL;
+    }
+}

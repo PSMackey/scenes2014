@@ -90,6 +90,15 @@ void aText::setTaken() { //092614 msg from Hotspot
     printf("HARK! aText asset %s has been TAKEN\n",text.c_str());
 }
 
+//1003
+aText* aText::getTakenItem() {
+    if (taken) {
+        return this;
+    } else {
+        return NULL;
+    }
+}
+
 void aText::setVisible(){ //might set from node 091814
     visible=!visible;
     if (myHotspot!=NULL) myHotspot->setVisible(visible); //092914

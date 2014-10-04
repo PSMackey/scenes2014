@@ -7,10 +7,10 @@
 int winX;
 int winY;
 
-Scene::Scene(XMLmanager* _XMLmgr, ofTrueTypeFont* _font18, int _i){
+Scene::Scene(XMLmanager* _XMLmgr, ofTrueTypeFont* _font12, int _i){
     sceneNum = _i; //index of this scene in the scenes array
     XMLmgr = _XMLmgr;
-    font18p = _font18;
+    font12 = _font12;
     
     sceneName = XMLmgr->getSceneName(sceneNum);
     // using 'go into' -> symbol not a dot since XMLmgr is a pointer
@@ -39,7 +39,7 @@ Scene::Scene(XMLmanager* _XMLmgr, ofTrueTypeFont* _font18, int _i){
         for (int ni=0;ni<nNodes;ni++) {
             
             //notice: sceneNum is the xmlindex of this scene
-            nodes.push_back(new Node(sceneNum, ni, XMLmgr)); //and font18p
+            nodes.push_back(new Node(sceneNum, ni, XMLmgr)); //and font12
             //XMLmgr is already a pointer, you don't need to say &XMLmgr as the parameter
             
             //while looking, extract the BG data when you find it...
@@ -112,6 +112,50 @@ void Scene::draw() {
     ofSetColor(0);
     ofRect(window);
     ofRect(dialogue);
+}
+
+//1003
+vector<aText*> Scene::lookForTakenItems() {
+    
+    vector<aText*> myNodesTakenItems;
+    for (int i=0; i<nodes.size(); i++) {
+        aText* tiPtr = NULL;
+        tiPtr = nodes[i]->getTakenItem();
+        if (tiPtr != NULL) {
+            myNodesTakenItems.push_back(tiPtr);
+        }
+    }
+    return myNodesTakenItems;
+}
+
+//1003
+vector<aText*> Scene::lookForTakenContainerItems() {
+    vector<aText*> allMyNodesTakenItems;
+    
+    
+    takenItemsFromScene = scenes[i]->lookForTakenContainerItems();
+    
+    //insert that vector into allTakenItems
+    vector<aText*>::iterator ittse = takenItemsFromScene.end();
+    vector<aText*>::iterator ittsb = takenItemsFromScene.begin();
+    
+    allTakenItems.insert(allTakenItems.end(), ittsb, ittse);
+    takenItemsFromScene.clear(); //empty it for next pass
+
+    
+    //TODO: finish, not sure this (above) is right or needed here
+    
+
+    for (int i=0; i<nodes.size(); i++) {
+        aText* tiPtr = NULL;
+        tiPtr = nodes[i]->getTakenContainerItems(); //come back as vectors
+        if (tiPtr != NULL) {
+            myNodesTakenItems.push_back(tiPtr);
+        }
+    }
+    return myNodesTakenItems;
+
+    
 }
 
 //091814

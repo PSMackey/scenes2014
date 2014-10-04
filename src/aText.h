@@ -31,6 +31,7 @@ public:
     void setTaken(); //092614
     bool taken;
     string getName();
+    aText* getTakenItem(); //1003
     
 private:
     int nodeNum;            //092614 //1002
@@ -49,5 +50,7 @@ private:
     
     ofColor clr;
     ofColor clrLightOn_base, clrLightOn_hover, clrLightOff_base, clrLightOff_hover;
+    
+
     
 };
