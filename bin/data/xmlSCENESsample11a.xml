@@ -35,6 +35,7 @@
             <R>  164  </R><G>  164  </G><B> 164 </B>
             <R2>  255  </R2> <G2>  153  </G2> <B2> 0 </B2>
         </TEXT>
+        <LINK mode=TAKE>stealingAtowel</LINK>
     </NODE>
     <NODE>
         <TEXT>

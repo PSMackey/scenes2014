@@ -243,6 +243,10 @@ void Core::mouseReleased(int x, int y, int button){
 void Core::keyPressed(int key){
     if (firstRun) { return; }
     
+    if (key=='i') {
+        lookForTakenItems();
+    }
+    
     //use custom events to send info to any Listener...
     static Events anEvent;
     anEvent.keycode = key;

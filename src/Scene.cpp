@@ -115,8 +115,8 @@ void Scene::draw() {
 }
 
 //1003
-vector<aText*> Scene::lookForTakenItems() {
-    
+vector<aText*> Scene::lookForTakenItems() { //called by Core
+    //nodes with Text assets will return individual items
     vector<aText*> myNodesTakenItems;
     for (int i=0; i<nodes.size(); i++) {
         aText* tiPtr = NULL;
@@ -129,33 +129,23 @@ vector<aText*> Scene::lookForTakenItems() {
 }
 
 //1003
-vector<aText*> Scene::lookForTakenContainerItems() {
-    vector<aText*> allMyNodesTakenItems;
+vector<aText*> Scene::lookForTakenContainerItems() {  //also called by Core
+    vector<aText*> myNodesTakenContainerItems;
     
+    //nodes with TextContainers will return vectors of possibly multiple items
     
-    takenItemsFromScene = scenes[i]->lookForTakenContainerItems();
-    
-    //insert that vector into allTakenItems
-    vector<aText*>::iterator ittse = takenItemsFromScene.end();
-    vector<aText*>::iterator ittsb = takenItemsFromScene.begin();
-    
-    allTakenItems.insert(allTakenItems.end(), ittsb, ittse);
-    takenItemsFromScene.clear(); //empty it for next pass
-
-    
-    //TODO: finish, not sure this (above) is right or needed here
-    
-
+    vector<aText*> itemsFromNodeContainer;
+    //go through each returned vector and add its items to myNodesTakenContainerItems
     for (int i=0; i<nodes.size(); i++) {
-        aText* tiPtr = NULL;
-        tiPtr = nodes[i]->getTakenContainerItems(); //come back as vectors
-        if (tiPtr != NULL) {
-            myNodesTakenItems.push_back(tiPtr);
-        }
+        itemsFromNodeContainer = nodes[i]->getTakenContainerItems(); //come back as vectors
+        //insert that vector into myNodesTakenContainerItems
+        vector<aText*>::iterator ittse = itemsFromNodeContainer.end();
+        vector<aText*>::iterator ittsb = itemsFromNodeContainer.begin();
+        
+        myNodesTakenContainerItems.insert(myNodesTakenContainerItems.end(), ittsb, ittse);
+        itemsFromNodeContainer.clear(); //empty it for next pass
     }
-    return myNodesTakenItems;
-
-    
+    return myNodesTakenContainerItems;
 }
 
 //091814

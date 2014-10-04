@@ -255,7 +255,7 @@ vector<aText*> Node::getTakenContainerItems() {  //called from your Scene
         for (int i=0; i<n; i++) {
             aText* tiPtr;
             tiPtr = textcntnr->getTakenItem(i);
-            if (tiPtr!=NULL) {
+            if (tiPtr!=NULL) { //just a safety check
                 takenContainerItems.push_back(tiPtr);
             }
         }
