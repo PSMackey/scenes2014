@@ -92,7 +92,6 @@ void aTextCntnr::parseContents() {
 void aTextCntnr::setVisible(){ //might set from node?
     visible=!visible;
     if (myHotspot!=NULL) myHotspot->setVisible(visible); //092914
-    //TODO: enable also setting the visibility flag in your Hotspot
 }
 void aTextCntnr::setLight() { //092514
     lightOn = !lightOn;
@@ -140,6 +139,8 @@ void aTextCntnr::draw(ofPoint _nodeLoc) {
         }
     }
 }
+
+//1003 many places not noted, getting taken items and loading onto a list in Core
 
 int aTextCntnr::getNumItems() {
     return textItems.size();

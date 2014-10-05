@@ -21,10 +21,8 @@ Node::Node(int _snum, int _xmlnodei, XMLmanager* _xmlmgr ) {
     nodeName = XMLmgr->getNodeName(_snum,_xmlnodei);
     printf("Scene %i made a new NODE %s num=%i\n",_snum,nodeName.c_str(),nodeNum);
     
-    //now this Node reads its XML data and creates its assets
-    //NOTICE a Node manages only one asset type
-    
-    //int nAssets = XMLmgr->getAssetCountInNode(_snum,_xmlnodei);
+    //this Node reads its XML data and creates its assets
+    //manages only one asset type
     
     if (XMLmgr->nodeHasThisTag(ANIM, sceneNum, _xmlnodei)) {
         animInfo = XMLmgr->getAnimation(sceneNum,_xmlnodei);
@@ -126,7 +124,6 @@ void Node::assignDimensionsToHotspot() {
     //otherwise give it the dims of the visual asset
 
     //only one of these will be true
-    //WIP just send all the sturct data? a picky detail
     if (picture!=NULL) {
         hotSpot->setDims(picture->dimensions, picture->centered);
     }
@@ -187,7 +184,7 @@ void Node::update(ofPoint _mse) {
 void Node::draw() {
     //NODE knows the locXY (get it from dragged HS if needed)
     
-    if (custom!=NULL) { custom->draw(); } //WIP x,y is predefined in the obj for now
+    if (custom!=NULL) { custom->draw(); }
     
     if (hotSpot!=NULL) { nodeLoc = hotSpot->getLoc(); }
     

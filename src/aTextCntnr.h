@@ -53,7 +53,6 @@ private:
     vector<aText*> textItems;       //092614
     
     string rawcontentstring;
-    //string assetName;
     
     ofColor clr;
     ofColor clrLightOn_base, clrLightOn_hover, clrLightOff_base, clrLightOff_hover;

@@ -1,5 +1,5 @@
   //  Scene.cpp            //
- //  xmlReadScenes8 - psm //  uses scheme as of Mar 27
+ //  scenes1002 - psm //  
 ///////////////////////////
 
 #include "Scene.h"
@@ -13,7 +13,6 @@ Scene::Scene(XMLmanager* _XMLmgr, ofTrueTypeFont* _font12, int _i){
     font12 = _font12;
     
     sceneName = XMLmgr->getSceneName(sceneNum);
-    // using 'go into' -> symbol not a dot since XMLmgr is a pointer
     printf("Making a Scene named %s\n",sceneName.c_str());
     
     ofBackground(0); //default black bg
@@ -40,7 +39,7 @@ Scene::Scene(XMLmanager* _XMLmgr, ofTrueTypeFont* _font12, int _i){
             
             //notice: sceneNum is the xmlindex of this scene
             nodes.push_back(new Node(sceneNum, ni, XMLmgr)); //and font12
-            //XMLmgr is already a pointer, you don't need to say &XMLmgr as the parameter
+            //XMLmgr is a pointer
             
             //while looking, extract the BG data when you find it...
             if (nodes[ni]->isTheBG() ) {
@@ -95,8 +94,6 @@ void Scene::update(ofPoint _mse) {
 }
 
 void Scene::draw() {
-    //cout<<"here's what the ofImage bg var address looks like in scene "+sceneName<<&bg<<endl;
-   // bool overhotspot=false;
     
     if (hasBGfile) { bg.draw(0,0); }
     else { ofBackground(BGcolor); }
@@ -104,8 +101,6 @@ void Scene::draw() {
     for (int i=0; i<nodes.size(); i++) {
         nodes[i]->draw();
     }
-    //you're not using this technique now
-    //return overhotspot;
     
     //interface borders
     ofNoFill();

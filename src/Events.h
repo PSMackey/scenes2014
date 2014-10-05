@@ -21,21 +21,17 @@ public:
     static ofEvent <Events> mousepressevent;
    
     
-    //event properties [you define]
-    //these are "sent with" the event message
+    //event properties which can be "sent with" any of these event packages
     //and are read by the receiving Listener
     int currentscene;
     int msebttn;
     ofPoint mseloc;
-
-    //these may be included in any of these event packages
     
     static ofEvent <Events> scenechangeevent;
     string nextscenename;
     
 
     static ofEvent <Events> keypressevent;
-    //static ofEvent <Events> mouseroll;
     
     int      whichHotspot;
     string   message;

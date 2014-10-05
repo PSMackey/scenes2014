@@ -22,7 +22,7 @@
 class Node {
     
 public:
-    Node(); //just in case, every class should have this default empty constructor
+    Node(); //default empty constructor
     
     Node(int _snum, int _xmlnodenum, XMLmanager* _xmlmgr);
     
@@ -33,9 +33,6 @@ public:
     
     void update(ofPoint _mse);
     void draw();
-//091814
-//    void checkMousePress(ofPoint _mse);
-//    bool checkMouseUp(ofPoint mse);
    
     int  getSelected();
     string getName();   //091814
@@ -65,7 +62,7 @@ private:
     ofPoint nodeLoc;
     
     //assuming only one media type per Node
-    //e_types nodeType; //may not need this
+
     bool nodeIsBG;  //psm04132014
 
     string BGinfo="";

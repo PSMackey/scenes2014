@@ -26,16 +26,12 @@ aHotspot::aHotspot(){}
 
 //version for a Node with a Link
 aHotspot::aHotspot(sLinkData _LD, int _nodenum, int _scenenum, string _scname){
-//    winW = 1200;
-//    winH = 660;
-//    winX = (ofGetWidth()/2)-(winW/2);
-//    winY = (ofGetHeight()/2)-((winH+100)/2);
     
     mySceneName = _scname; //not using
     mySceneNum = _scenenum;
     myNodeNum = _nodenum;
     
-    /* 091814 note if this hotspot's Node contains a TextContainer asset,
+    /* 091814 if this hotspot's Node contains a TextContainer asset,
      link MODE should be OPEN (used on mouseReleased)
      and INFO part can say anything (it is just a meaningless placeholder)
      example  <LINK mode=OPEN> hoohah </LINK>
@@ -43,7 +39,7 @@ aHotspot::aHotspot(sLinkData _LD, int _nodenum, int _scenenum, string _scname){
     myLinkType = _LD.MODE;
     myLinkInfoStr = _LD.INFO;
     draggable = false;
-    //TODO: enable setting this visibility flag from Asset(! done ?)
+    
     visible=true;
     
     // listen for custom events from Core
@@ -58,7 +54,7 @@ aHotspot::aHotspot(ofVec4f _dims, bool _centered, int _id, int _nodenum, int _sc
     myNodeNum = _nodenum;
     idnum = _id;
     setDims(_dims, _centered);
-    myLinkType = TAKE; //<----------------
+    myLinkType = TAKE;
     draggable = false;
     
     visible=true; //091814 assume true, set this false from asset if not
@@ -125,7 +121,7 @@ bool aHotspot::update() {
     mouseIsOver=false; //reset for next check
     
     if (draggable && visible) {
-        //TODO: WIP dont! capture mouse location if it 'happens' to be over this as the scene begins
+        //TODO: if a problem: capture mouse location if it 'happens' to be over this as the scene begins
         perimeter.set(locXY.x, locXY.y, W, H); //keep updating in case dragging
         if (mouseIsDown) { //user may be trying to drag
             ofPoint mse = ofPoint(ofGetMouseX(),ofGetMouseY());
@@ -147,12 +143,9 @@ bool aHotspot::update() {
         //did this "enter" just happen? may need in future
         if ( !wasEntered && mouseIsOver ) {
             wasEntered = true;
-            //return true; EnterEVENT!
-            //myNodePtr->mouseJustEntered();
         } else {
             if ( wasEntered && !mouseIsOver ) {
                 wasEntered = false;
-                //return true;  LeaveEVENT!
             }
         }
         
@@ -223,7 +216,7 @@ void aHotspot::mouseReleased(Events &e){
                 case TAKE:  //092614  see approx line 54 above
                     printf("...specifically, a TAKE on item %i\n",idnum);
                     //tell your asset it has been TAKEN
-                    myAssetPtr->setTaken(); //yay!
+                    myAssetPtr->setTaken(); 
                     break;
                 
                 case TRIGGER:

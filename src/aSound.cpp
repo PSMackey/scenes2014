@@ -36,7 +36,7 @@ aSound::aSound(sAudioData _data){
 //called from Node
 //start() is called always, but may need to keep asset paused/silent/invisible until some other event, so use PLAYING flag
 void aSound::start() { //doFadeIn
-    if (!inrate>0) { //if no fadein rate set, just set vol to 1
+    if (!(inrate>0)) { //if no fadein rate set, just set vol to 1
         snd.play();
         snd.setVolume(maxvolume);
         currentVolume=maxvolume; //good housekeeping
@@ -51,7 +51,7 @@ void aSound::start() { //doFadeIn
 }
 
 void aSound::finish() { //doFadeOut
-    if (!outrate>0) { //if not outrate, just shut up
+    if (!(outrate>0)) { //if not outrate, just shut up
         snd.stop();
         snd.setVolume(0);
         direction=0; //dont bother to "update"

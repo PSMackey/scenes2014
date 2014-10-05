@@ -14,7 +14,6 @@ class aSound {
 public:
     aSound(sAudioData _sndData);
     
-    //void draw();
     void update();
     void start();
     void finish();

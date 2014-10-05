@@ -50,7 +50,7 @@ void aVideo::start() {
     if (vidData.LOOP) { mov.setLoopState(OF_LOOP_NORMAL); }
     else { mov.setLoopState(OF_LOOP_NONE); }
 
-    if (!inrate>0) { //if no fadein rate set, just set alpha to max
+    if (!(inrate>0)) { //if no fadein rate set, just set alpha to max
         mov.play();
         alphaPct = 1.0;
         currentAlpha=255;
@@ -68,7 +68,7 @@ void aVideo::start() {
 }
 
 void aVideo::finish() { //doFadeOut
-    if (!outrate>0) { //just stop (but stay visible)
+    if (!(inrate>0)) { //just stop (but stay visible)
         mov.stop();
         currentAlpha=255;
         direction=0; //dont bother
@@ -76,7 +76,8 @@ void aVideo::finish() { //doFadeOut
         //fade out
         direction=-1;
     }
-    //TODO: wip-debug fading after you figure out how to pause a scene change until all fades have completed haha yikes!
+    //TODO: wip-debug fading after you figure out how
+    //      to pause a scene change until all fades have completed haha yikes!
 }
 
 

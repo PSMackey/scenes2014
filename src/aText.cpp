@@ -84,13 +84,16 @@ string aText::getName(){ //called by your Hotspot 092614
 }
 
 void aText::setTaken() { //092614 msg from Hotspot
-    taken=true;  //<--------could poll for this property from Core
+    taken=true;
     visible=false;
     if (myHotspot!=NULL) myHotspot->setVisible(false); //092914
     printf("HARK! aText asset %s has been TAKEN\n",text.c_str());
 }
 
-//1003
+
+//1003 this in many places is not noted
+//getting taken items and loading onto a list in Core
+
 aText* aText::getTakenItem() {
     if (taken) {
         return this;

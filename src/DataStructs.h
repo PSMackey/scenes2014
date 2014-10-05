@@ -19,7 +19,7 @@ enum e_types {
 //091814
 const static int NTYPES=9;
 const static string types[NTYPES] = {"BG", "PICT", "VIDEO", "ANIM", "AREA", "TEXT", "TEXTCONTAINER", "AUDIO", "CUSTOM"};
-//TODO: find other way to globally expose these two vars?
+//these vars are available anywhere DataStructs.h is included
 
 /* usage example, eg _tag = PICT
  XML.tagExists(types[_tag]); //recall that enums are actually ints 0,1,..
